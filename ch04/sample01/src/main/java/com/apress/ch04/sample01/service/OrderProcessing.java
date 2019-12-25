@@ -3,6 +3,10 @@ package com.apress.ch04.sample01.service;
 import java.net.URI;
 import java.util.UUID;
 
+import com.apress.ch04.sample01.model.Item;
+import com.apress.ch04.sample01.model.Order;
+import com.apress.ch04.sample01.model.PaymentMethod;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,10 +16,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
-import com.apress.ch04.sample01.model.Item;
-import com.apress.ch04.sample01.model.Order;
-import com.apress.ch04.sample01.model.PaymentMethod;
 
 @RestController
 @RequestMapping(value = "/order")
